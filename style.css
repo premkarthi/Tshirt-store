@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: #f2f2f2;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 111;
+}
+
+.container{
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 2rem;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+}
+
+header ul li{
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+header ul li span{
+    background: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 2px;
+    min-width: 25px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+header ul li:first-child{
+    margin-right: 30px;
+}
+
+/*Section styles are here*/
+
+section {
+   padding: 50px 20px;
+}
+
+section .container{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.filterSection{
+    background: #f2f2f2;
+    padding: 40px;
+    flex-basis: 20%;
+    margin-right: 40px;
+}
+
+.filters{
+    margin-bottom: 40px;
+}
+.filters h3{
+    margin-bottom: 20px;
+}
+.filters ul li {
+    margin-bottom: 10px;
+}
+
+
+/* Products Section style are here */
+
+.productAndSearchSection{
+    flex-basis: 80%;
+}
+.searchSection{
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: right;
+}
+.searchSection input{
+    border: 0px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    min-width: 300px;
+    font-size: 16px;
+    outline: none;
+    margin-right: 10px;
+}
+
+ button{
+    background: #000;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.productCard .color{
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    border: 1px solid currentColor;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.color.Blue{
+    background: blue;
+    border: 1px solid blue;
+
+}
+.color.Pink{
+    background: pink;
+    border: 1px solid pink;
+
+}
+.color.Green{
+    background: green;
+    border: 1px solid green;
+}
+.color.White{
+    background: white;
+    border: 1px solid rgb(223, 223, 223);
+}
+.color.Yellow{
+    background: yellow;
+    border: 1px solid yellow;
+}
+.color.Grey{
+    background: grey;
+    border: 1px solid grey;
+}
+.color.Black{
+    background: black;
+    border: 1px solid black;
+
+}
+.color.Red{
+    background: red;
+    border: 1px solid red;
+
+}
+.color.Purple{
+    background: purple;
+    border: 1px solid purple;
+
+}
+.productSection{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.productCard{
+    flex-basis: 30%;
+    max-width: 180px;
+    min-width: 25%;
+    box-shadow: 0px 0px 3px 2px #f5f5f5;
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    border: 1px solid #ebebeb;
+}
+.productImage{
+    height: 200px;
+    min-width: 100%;
+    margin-bottom: 10px;
+}
+
+.productImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.productTitle{
+    margin-bottom: 10px;
+}
+.productPrice{
+    margin-bottom: 10px;
+}
+.AddToCartBtn{
+    font-size: 14px;
+}
+.AddToCartBtn.disable{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.miniCart{
+    position: absolute;
+    background: #f2f2f2;
+    top: 58px;
+    right: 0px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 11;
+    padding: 20px 10px 20px 20px;
+    display: block;
+    min-width: 300px;
+    box-shadow: 0px 2px 4px 4px #e1dfdf;
+}
+.miniCart h4{
+    margin-bottom: 10px;
+}
+
+.miniCart.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.addedProducts{
+    margin-bottom: 30px;
+    max-height: 400px;
+    overflow: auto;
+}
+
+.cartProduct{
+    display: flex;
+    border-bottom: 1px solid #ddd; 
+    margin: 10px 0px;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.miniAddCard{
+    width: 100%;
+    display: block;
+}
+
+.cartProduct img{
+    max-width: 80px;
+    min-width: 80px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    box-sizing: border-box;
+}
+.cartProduct h2{
+    font-size: 14px;
+}
+
+.cartProduct .info{
+    text-align: left;
+    width: 100%;
+}
+
+.remove{
+    color: red;
+    font-weight: 300;
+    cursor: pointer;
+  
+}
+
+.close{
+    color: red;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.qty{
+    margin: 10px 0px;
+}
+.qty button{
+    padding: 5px;
+    min-width: 30px;
+}
+.qty input{
+    padding: 8px 5px;
+    max-width: 30px;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cartpage .cartMain .miniCart{
+    position: relative;
+    opacity: 1;
+    visibility: visible; 
+    left: 0px;
+    right: 0;
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+}
+.cartpage .cartMain .addedProducts{
+    overflow: unset;
+    max-height: unset;
+}
+
+.cartpage .cartMain .miniAddCard{
+    width: 50%;
+}
+@media screen and (max-width:1025px){
+    .productCard{
+        min-width: 38%;
+        max-width: 200px;
+    }
+}
+
+.filter{
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    .productCard{
+        min-width: 80%;
+        max-width: 80%; 
+    }
+    section .container{
+      justify-content: center;
+      position: relative;
+    }
+    .filterSection{
+        display: none;
+        margin-right: 0px;
+        position: absolute;
+        top: 50px;
+        z-index: 11;
+        width: 70%;
+
+    }
+    .filterSection.active{
+        display: block;
+    }
+    .filter{
+        display: block;
+        margin-left: 5px;
+    }
+    header h1 {
+        font-size: 1rem;
+    }
+    section {
+        padding: 30px 10px;
+    }
+    .searchSection{
+        display: flex;
+    }
+    .searchSection input{
+        min-width: 140px;
+    }
+}

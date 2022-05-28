@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeeRex Store</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="mainpage"> 
+
+    <header>
+        <div class="container">
+            <h1><a href="./index.html">TeeRex Store</a></h1>
+            <ul>
+                <li>Products</li>
+                <li ><p class="cartBtn">Cart <span class="cartCount">0</span></p> 
+                    <ul class="miniCart">
+                        <h4>Cart</h4>
+                        <div class="close">✕</div>
+                        <div class="addedProducts">
+                         
+                        </div>
+
+                        <h4 >Total price<span class="totalPrice"></span></h3>
+                        <button class="miniAddCard">Cart Page</button>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="filterSection">
+                <div class="filters">
+                    <h3> Colour</h3>
+                    <ul>
+                        <li>
+                            <input type="radio" name="color" class="color" id="All">
+                            <label for="All">All</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="color" class="color" id="Red">
+                            <label for="Red">Red</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="color" class="color" id="Blue">
+                            <label for="Blue">Blue</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="color" class="color" id="Green">
+                            <label for="Green">Green</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filters">
+                    <h3> Gender</h3>
+                    <ul>
+                 
+                        <li>
+                            <input type="radio" name="gender" class="gender" id="Men">
+                            <label for="Men">Men</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="gender" class="gender" id="Women">
+                            <label for="Women">Women</label>
+                        </li>
+                      
+                    </ul>
+                </div>
+                <div class="filters">
+                    <h3> Price</h3>
+                    <ul>
+                        <li>
+                            <input type="radio" name="price" class="price" id="250">
+                            <label for="250">0 - Rs 250</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price" class="price" id="350">
+                            <label for="350">Rs251 - 450</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="price" class="price" id="450">
+                            <label for="450"> > Rs450</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filters">
+                    <h3> Type</h3>
+                    <ul>
+                      
+                        <li>
+                            <input type="radio" name="type" class="type" id="Polo">
+                            <label for="Polo">Polo</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="type" class="type" id="Hoodie">
+                            <label for="Hoodie">Hoodie</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="type" class="type" id="Basic">
+                            <label for="Basic">Basic</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="productAndSearchSection">
+                <div class="searchSection">
+                    <input type="search" placeholder="Search Products" class="search">
+                    <button class="searchBtn">🔎</button>
+                    <button class="filter">🗳</button>
+                </div>
+                <div class="productSection" id="productList">
+                    <div class="productCard">
+                        <div class="productImage"></div>
+                        <div class="productTitle">Black Polo</div>
+                        <div class="productPrice">Rs 300</div>
+                        <button class="AddToCartBtn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
